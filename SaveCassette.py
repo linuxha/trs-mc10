@@ -18,7 +18,7 @@ cassData = form.getvalue('cassette-data')
 
 # ------------------------------------------------------------------------------
 try:
-    logFile = open('/tmp/cgi.txt', 'w')
+    logFile = open(fileName, 'w')
 
     logFile.write("Filename: %s\nData: <<%s>>" % (fileName, cassData))
     x = base64.b64decode(cassData)
